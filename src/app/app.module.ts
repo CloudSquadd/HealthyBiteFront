@@ -9,11 +9,15 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ListeRestaurantComponent } from './liste-restaurant/liste-restaurant.component';
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        ListeRestaurantComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -22,7 +26,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
