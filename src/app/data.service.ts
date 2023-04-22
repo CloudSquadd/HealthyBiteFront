@@ -11,7 +11,7 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   getAllRestaurant(): Observable<any[]>{
-    return this.httpClient.get<any[]>(this.URL+"getAllRestaurant");
+    return this.httpClient.get<any[]>(this.URL+"api/test/getAllRepas");
   }
 
 }
