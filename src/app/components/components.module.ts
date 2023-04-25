@@ -13,6 +13,10 @@ import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
+import { AddLivraisonComponent } from './add-livraison/add-livraison.component';
+import { UpdateLivraisonComponent } from './update-livraison/update-livraison.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { GetAllLivraisonComponent } from './get-all-livraison/get-all-livraison.component';
 
 @NgModule({
     imports: [
@@ -30,7 +34,11 @@ import { NgbdModalBasic } from './modal/modal.component';
         TypographyComponent,
         NucleoiconsComponent,
         NotificationComponent,
-        NgbdModalBasic
+        NgbdModalBasic,
+        AddLivraisonComponent,
+        UpdateLivraisonComponent,
+        AdduserComponent,
+        GetAllLivraisonComponent
     ],
     exports:[ ComponentsComponent ]
 })
