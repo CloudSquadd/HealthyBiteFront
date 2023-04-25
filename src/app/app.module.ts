@@ -13,11 +13,12 @@ import { ListeRestaurantComponent } from './liste-restaurant/liste-restaurant.co
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        ListeRestaurantComponent
+        ListeRestaurantComponent,
     ],
     imports: [
         BrowserAnimationsModule,

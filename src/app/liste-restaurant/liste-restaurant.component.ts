@@ -11,6 +11,7 @@ import { DataService } from 'app/data.service';
 export class ListeRestaurantComponent implements OnInit{
 
 restaurant:any[]=[]
+myvar:any;
 
   constructor(private dataService:DataService) { }
 
