@@ -12,12 +12,18 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ListeRestaurantComponent } from './liste-restaurant/liste-restaurant.component';
 import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ListeReclamationsComponent } from './liste-reclamations/liste-reclamations.component';
+import { AddReclamationsComponent } from './add-reclamations/add-reclamations.component';
+import { AddReponseComponent } from './add-reponse/add-reponse.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        ListeRestaurantComponent
+        ListeRestaurantComponent,
+        ListeReclamationsComponent,
+        AddReclamationsComponent,
+        AddReponseComponent
     ],
     imports: [
         BrowserAnimationsModule,

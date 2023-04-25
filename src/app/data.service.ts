@@ -13,5 +13,14 @@ export class DataService {
   getAllRestaurant(): Observable<any[]>{
     return this.httpClient.get<any[]>(this.URL+"api/test/getAllRepas");
   }
+  getAllReclamation(): Observable<any[]> {
+    return this.httpClient.get<any[]>(this.URL + "api/test/retrieveAllReclamation");
+  }
+  addReclamation(reclamation: any): Observable<any> {
+    return this.httpClient.post(this.URL + "api/test/addReclamation", reclamation);
+  }
+  addReponse(reponseReclamation: any, idReclamation: number): Observable<any> {
+    return this.httpClient.post(this.URL + "api/test/addReponseReclamation/{idReclamation}", reponseReclamation);
+  }
 
 }

@@ -9,6 +9,9 @@ import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { ListeRestaurantComponent } from './liste-restaurant/liste-restaurant.component';
+import { ListeReclamationsComponent } from './liste-reclamations/liste-reclamations.component';
+import { AddReclamationsComponent } from './add-reclamations/add-reclamations.component';
+import { AddReponseComponent } from './add-reponse/add-reponse.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -17,7 +20,10 @@ const routes: Routes =[
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
     { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'restaurant',           component: ListeRestaurantComponent }
+    { path: 'restaurant',           component: ListeRestaurantComponent },
+    { path: 'reclamation',          component: ListeReclamationsComponent },
+    { path: 'Addreclamation', component: AddReclamationsComponent },
+    { path: 'Addreponse', component: AddReponseComponent }
 ];
 
 @NgModule({
