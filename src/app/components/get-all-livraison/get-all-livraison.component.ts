@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from 'app/data.service';
+import { AppSerice } from 'app/appservice';
+
 @Component({
   selector: 'get-all-livraison',
   templateUrl: './get-all-livraison.component.html',
   styleUrls: ['./get-all-livraison.component.css'],
-  providers: [DataService],
+  providers: [AppSerice],
 })
 export class GetAllLivraisonComponent implements OnInit {
 
@@ -13,7 +14,7 @@ export class GetAllLivraisonComponent implements OnInit {
   Livraisons: any[] | undefined
   url: string = "http://localhost:8080/";
 
-  constructor(private service: DataService, private router: Router) { 
+  constructor(private service: AppSerice, private router: Router) { 
    
   }
 

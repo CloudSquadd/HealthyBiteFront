@@ -9,6 +9,9 @@ import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { ListeRestaurantComponent } from './liste-restaurant/liste-restaurant.component';
+import { AddLivraisonComponent } from './components/add-livraison/add-livraison.component';
+import { GetAllLivraisonComponent } from './components/get-all-livraison/get-all-livraison.component';
+import { UpdateLivraisonComponent } from './components/update-livraison/update-livraison.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -17,7 +20,10 @@ const routes: Routes =[
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
     { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'restaurant',           component: ListeRestaurantComponent }
+    { path: 'restaurant',           component: ListeRestaurantComponent },
+    { path: 'AllLiv', component: GetAllLivraisonComponent },
+    { path: 'addLiv', component: AddLivraisonComponent },
+    { path: 'updateLiv/:id', component: UpdateLivraisonComponent }
 ];
 
 @NgModule({
@@ -26,7 +32,8 @@ const routes: Routes =[
         BrowserModule,
         RouterModule.forRoot(routes)
     ],
-    exports: [
+    exports: [RouterModule
     ],
 })
+
 export class AppRoutingModule { }
