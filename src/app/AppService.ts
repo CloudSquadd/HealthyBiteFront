@@ -7,19 +7,9 @@ import { Livraison } from './components/models/Livraison';
   providedIn: 'root'
 })
 export class AppSerice {
-  readonly URL = "http://localhost:8080/"
+  readonly URL = "http://localhost:*/"
 
   constructor(private httpClient: HttpClient) { }
-
-  getAllRestaurant(): Observable<any[]>{
-    return this.httpClient.get<any[]>(this.URL+"api/test/getAllRepas");
-  }
-
-
-
-
-
-
 
 
 ///// NNNNNAAAAADDDDDAAAAA ccrrrrrruuuuuuudddddddd /////////
